@@ -10,12 +10,12 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
-    "sass": "^1.77.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "sass": "sass ./src/sass/main.scss ./src/css/style.css -w --style compressed"
+    "start": "concurrently \"npm run start:react\" \"npm run start:sass\"",
+    "start:react": "react-scripts start",
+    "start:sass": "sass ./src/sass/main.scss ./src/css/style.css -w --style compressed"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "sass": "^1.77.4"
   }
 }

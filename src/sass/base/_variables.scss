@@ -1,2 +1,7 @@
 $primary-color: rgb(0, 49, 195);
 $font-primary: "Montserrat", sans-serif;
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
