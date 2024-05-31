@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &__logo{
+        width: 210px;
+    }
     @media (max-width:550px) {
         &__logo{
             width: 145px;
