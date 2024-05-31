@@ -1,7 +1,13 @@
 $primary-color: rgb(0, 49, 195);
+$secondary-color: black;
+$third-color: white;
 $font-primary: "Montserrat", sans-serif;
-
-@mixin flex-column {
-    display: flex;
+@mixin mobile {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+@mixin flex-column{
+    display:flex;
     flex-direction: column;
 }

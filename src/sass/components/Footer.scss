@@ -1,0 +1,23 @@
+@import "../base/variables";
+
+.footer {
+    width: 100%;
+    height:209px;
+    background-color: $secondary-color;
+    color: $third-color;
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    &__logo {
+        width: 122px;
+    };
+    &__text {
+        font-size: 24px;
+    };
+    @include mobile {
+        &__text{
+            font-size: 12px;
+        }
+    }
+}
