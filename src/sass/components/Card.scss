@@ -21,4 +21,8 @@
         left: 20px;
         color: $third-color;
     }
+    @include mobile {
+        height: 255px;
+        width: 335px;
+    }
 }

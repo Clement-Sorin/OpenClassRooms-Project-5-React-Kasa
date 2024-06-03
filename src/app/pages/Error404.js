@@ -1,5 +1,7 @@
 function PageError404() {
-    return <h1>Erreur 404</h1>
+    return <div>
+        <h1>Erreur 404</h1>
+    </div>
 }
 
 export default PageError404

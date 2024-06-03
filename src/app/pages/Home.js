@@ -6,10 +6,11 @@ import '../../sass/pages/Home.scss'
 function Home() {
   return (
     <main className="main">
-      <Banner />
+      <Banner key="banner" />
       <section className="gallery">
         {accomodations.map(({title, pictures, id}) =>
           <Card 
+            key={id}
             title={title}
             pictures={pictures}
             id={id}

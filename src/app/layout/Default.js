@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 const Default = () => {
   return (
     <>
-      <Header />
+      <Header key="header" />
       <main>
-        <Outlet />
+        <Outlet key="main" />
       </main>
-      <Footer />
+      <Footer key="footer" />
     </>
   );
 };
