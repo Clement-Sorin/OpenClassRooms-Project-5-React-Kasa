@@ -1,16 +1,15 @@
-import backgound_img from '../../assets/coast-background.webp'
 import "../../sass/components/Banner.scss"
 
-function Banner() {
+function Banner({background_img, title, alt}) {
     return <section className="banner">
         <img 
-            src={backgound_img} 
+            src={background_img} 
             className='banner__background' 
-            alt="fond pour le titre de la page représentant une côte maritime" 
+            alt={alt} 
         />
         <h1 
             className="banner__title">
-            Chez vous, partout et ailleurs
+            {title}
         </h1>
     </section>
 }

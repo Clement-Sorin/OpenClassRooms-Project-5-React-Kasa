@@ -1,12 +1,15 @@
-import accomodations from "../../datas/accomodations.json"
+import background_img from '../../assets/coast-background.webp'
 import Banner from "../components/Banner";
 import Card from '../components/Card';
 import '../../sass/pages/Home.scss'
 
-function Home() {
+function Home({accomodations}) {
+  const title = "Chez vous, partout et ailleurs"
+  const alt = "fond pour le titre de la page représentant une côte maritime"
+
   return (
-    <main className="main">
-      <Banner key="banner" />
+    <div className="wrap-main">
+      <Banner key="banner-home" background_img={background_img} title={title} alt= {alt} />
       <section className="gallery">
         {accomodations.map(({title, pictures, id}) =>
           <Card 
@@ -17,7 +20,7 @@ function Home() {
             />
         )}
       </section>
-    </main>
+    </div>
   );
 }
 

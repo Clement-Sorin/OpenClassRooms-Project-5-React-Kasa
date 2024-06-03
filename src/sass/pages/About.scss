@@ -1,0 +1,13 @@
+@import "../base/variables";
+
+.wrap-main {
+    @include flex-column;
+    align-items: center;
+}
+
+.container-collapse {
+    @include flex-column;
+    gap: 30px;
+    margin: 40px 0;
+    width: 1020px;
+}

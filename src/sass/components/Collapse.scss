@@ -1,0 +1,21 @@
+@import "../base/variables";
+
+.collapse-bar {
+    background-color: $fourth-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    &__title {
+        color: $third-color;
+    };
+}
+
+.collapse-content {
+    background-color: $fifth-color;
+    padding: 20px;
+    &__text {
+        font-size: 18px;
+    }
+}

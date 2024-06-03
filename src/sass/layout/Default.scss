@@ -1,0 +1,8 @@
+@import "../base/variables";
+
+.wrap-main {
+    margin: 0 50px;
+    @include mobile {
+        margin: 0 20px;
+    }
+}

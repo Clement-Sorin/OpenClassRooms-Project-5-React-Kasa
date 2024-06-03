@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom"
-import accomodations from '../../datas/accomodations.json'
 
-function Accomodation() {
+function Accomodations({accomodations}) {
     const {id} = useParams()
     const accomodation = accomodations.find((accomodation) => accomodation.id === id)
 
@@ -11,4 +10,4 @@ function Accomodation() {
     </div>
 }
 
-export default Accomodation
+export default Accomodations

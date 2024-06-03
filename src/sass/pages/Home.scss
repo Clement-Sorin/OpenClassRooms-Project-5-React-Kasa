@@ -1,16 +1,9 @@
 @import "../base/variables";
 
-.main {
-    margin: 0 50px;
-    @include mobile {
-        margin: 0 20px;
-    }
-}
-
 .gallery {
     margin:50px 0;
     padding: 50px;
-    background-color:#F6F6F6;
+    background-color:$fifth-color;
     @include radius-25;
     @include flex-center-center;
     gap: 50px;
