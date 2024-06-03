@@ -3,8 +3,7 @@
 .card {
     height: 340px;
     width: 340px;
-    background-color: orange;
-    border-radius: 10px;
+    @include radius-10;
     overflow: hidden;
     position: relative;
     &__image {
