@@ -1,0 +1,24 @@
+@import "../base/variables";
+
+.thumb {
+    height: 340px;
+    width: 340px;
+    background-color: orange;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    &__image {
+        width: auto;
+        height: 100%; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &__title {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: $third-color;
+    }
+}

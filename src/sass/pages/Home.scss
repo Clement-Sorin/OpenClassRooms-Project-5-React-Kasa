@@ -7,7 +7,7 @@
     position: relative;
     overflow: hidden;
     @include flex-center-center;
-    border-radius: 25px;
+    border-radius: $radius-25;
     &__background {
         width: 100%;
         object-position: center;
@@ -28,4 +28,14 @@
             justify-content: flex-start;
         }
     }
+}
+
+.gallery {
+    margin:50px;
+    padding: 50px;
+    background-color:#F6F6F6;
+    border-radius: $radius-25;
+    @include flex-center-center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
