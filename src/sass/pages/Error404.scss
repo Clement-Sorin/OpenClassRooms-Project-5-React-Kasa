@@ -1,0 +1,31 @@
+@import "../base/variables";
+
+.main-wrap {
+    @include flex-column-center;
+    gap: 50px;
+    margin: 50px 50px 70px 50px;
+    text-align: center;
+    &__title1 {
+        color: $fourth-color;
+        font-size: 288px;
+        font-weight: 700;
+    }
+    &__title2 {
+        color: $fourth-color;
+    }
+    &__link {
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    @include mobile {
+        &__title1 {
+            font-size: 96px;
+        }
+        &__title2 {
+            font-size: 18px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+}

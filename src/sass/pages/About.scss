@@ -1,8 +1,7 @@
 @import "../base/variables";
 
 .wrap-main {
-    @include flex-column;
-    align-items: center;
+    @include flex-column-center;
 }
 
 .container-collapse {
