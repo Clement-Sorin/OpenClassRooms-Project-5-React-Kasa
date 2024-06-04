@@ -26,6 +26,8 @@
     };
     @include mobile {
         gap: 26px;
+        flex-wrap: wrap;
+        margin-left: 20px;
         &__link{
             font-size: 12px;
         }

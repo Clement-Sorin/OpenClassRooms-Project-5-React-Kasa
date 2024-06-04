@@ -44,7 +44,7 @@
     0% {
         opacity: 1;
     }
-    30% {
+    40% {
         opacity: 0;
     }
     100% {
@@ -56,10 +56,9 @@
     background-color: $fifth-color;
     padding: 0 20px;
     transform: translateY(-90px);
-    transition: transform 400ms;
-    animation: opacityClose 400ms;
-    opacity: 0;
     height: 30px;
+    transition: transform 400ms, height 400ms;
+    animation: opacityClose 400ms forwards;
     overflow: hidden;
     position: relative;
     z-index: -1;
