@@ -11,6 +11,13 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 25px;
+    }
+    @include mobile {
+        height: 255px;
+        &__picture {
+            border-radius: 10px;
+        }
     }
 }
 
@@ -22,7 +29,11 @@
     align-items:center;
     position: absolute;
     z-index: 1;
-    
+    @include mobile {
+        &__back, &__forward {
+            height: 24px;
+        }
+    }
 }
 
 .picture-count {
@@ -34,5 +45,8 @@
         color: $third-color;
         font-size: 18px;
         font-weight: 500;
+    }
+    @include mobile {
+        display: none;
     }
 }
