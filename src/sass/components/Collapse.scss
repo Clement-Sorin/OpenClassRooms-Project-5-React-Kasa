@@ -10,11 +10,31 @@
     &__title {
         color: $third-color;
     };
+    &__arrow {
+        transform: rotate(0deg);
+        transition: transform 500ms;
+        &--open {
+            transform: rotate(180deg);
+            transition: transform 500ms;
+        }
+    }
 }
 
 .collapse-content {
-    background-color: $fifth-color;
-    padding: 20px;
+    transform: translateY(-90px);
+    transition: transform 500ms;
+    opacity: 0;
+    visibility: hidden;
+    &--open{
+        background-color: $fifth-color;
+        padding: 20px;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: transform 500ms, opacity 700ms;
+        position: relative;
+        z-index: -1;
+        margin-bottom: 30px
+    };
     &__text {
         font-size: 18px;
     }
