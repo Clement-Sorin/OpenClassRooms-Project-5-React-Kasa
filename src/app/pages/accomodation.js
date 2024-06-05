@@ -11,7 +11,11 @@ function Accomodations({accomodations}) {
     const equipments = accomodation.equipments
 
     return <div className="wrap-main">
-        <Slideshow pictures={accomodation.pictures} title={accomodation.title}/>
+        <Slideshow 
+            key={`Slideshow for ${accomodation.id}`}
+            pictures={accomodation.pictures} 
+            title={accomodation.title}
+        />
         <section className="details">
             <div className="part-1">
                 <div className="part-1__left">
@@ -28,14 +32,18 @@ function Accomodations({accomodations}) {
                 <div className="part-1__right">
                     <div className="host">
                         <span className="host__name">{accomodation.host.name}</span>
-                        <img className="host__picture" src={accomodation.host.picture} />
+                        <img className="host__picture" src={accomodation.host.picture} alt={`profile of ${accomodation.host}`} />
                     </div>
-                    <Rating />
+                    <Rating 
+                        key={`rating for ${accomodation.id}`}
+                        rate={accomodation.rating} 
+                    />
                 </div>
             </div>
             <div className="part-2">
                 <div className="part-2__collapse">
                     <Collapse 
+                        key={accomodation.description}
                         title="Description" 
                         content={accomodation.description}
                         classTitle="classHomeTitle" 
@@ -44,9 +52,10 @@ function Accomodations({accomodations}) {
                 </div>
                 <div className="part-2__collapse">
                     <Collapse 
+                        key={accomodation.equipment}
                         title="Equipement" 
                         content={equipments.map(equipment =>
-                            <ul>
+                            <ul key={equipment}>
                                 <li>{equipment}</li>
                             </ul>
                         )}

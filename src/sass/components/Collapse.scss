@@ -1,31 +1,5 @@
 @import "../base/variables";
 
-.collapse-bar {
-    background-color: $fourth-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    &__title {
-        color: $third-color;
-    };
-    &__arrow {
-        transform: rotate(0deg);
-        transition: transform 400ms;
-        &--open {
-            transform: rotate(180deg);
-            transition: transform 400ms;
-        }
-    }
-    @include mobile {
-        &__arrow {
-            width: 16px;
-        }
-    }
-}
-
 @keyframes opacityOpen {
     0% {
         opacity: 0;
@@ -46,6 +20,32 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+.collapse-bar {
+    background-color: $fourth-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include radius-10;
+    padding: 10px 20px;
+    cursor: pointer;
+    &__title {
+        color: $third-color;
+    };
+    &__arrow {
+        transform: rotate(0deg);
+        transition: transform 400ms;
+        &--open {
+            transform: rotate(180deg);
+            transition: transform 400ms;
+        }
+    }
+    @include mobile {
+        &__arrow {
+            width: 16px;
+        }
     }
 }
 
@@ -70,6 +70,8 @@
         margin-bottom: 30px
     };
 }
+
+// Different font-size according to the page
 
 .classAboutTitle {
     font-size: 24px;
