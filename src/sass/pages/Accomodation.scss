@@ -80,6 +80,8 @@
         margin-right: 10px;
         font-size: 18px;
         color: $fourth-color;
+        @include flex-column;
+        align-items: flex-end;
     }
     &__picture {
         width: 64px;

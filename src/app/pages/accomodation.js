@@ -9,6 +9,8 @@ function Accomodations({accomodations}) {
     const accomodation = accomodations.find((accomodation) => accomodation.id === id)
     const tags = accomodation.tags
     const equipments = accomodation.equipments
+    const fullName = accomodation.host.name
+    const slicedName = fullName.split(' ')
 
     return <div className="wrap-main">
         <Slideshow 
@@ -31,7 +33,11 @@ function Accomodations({accomodations}) {
                 </div>
                 <div className="part-1__right">
                     <div className="host">
-                        <span className="host__name">{accomodation.host.name}</span>
+                        <ul className="host__name">
+                            {slicedName.map(name =>
+                                <li>{name}</li>
+                            )}
+                        </ul>
                         <img className="host__picture" src={accomodation.host.picture} alt={`profile of ${accomodation.host}`} />
                     </div>
                     <Rating 
