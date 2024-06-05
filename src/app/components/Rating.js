@@ -10,12 +10,13 @@ function Rating({ rate }) {
         <img 
             key={i}
             src={i < rate ? starActive : starInactive} 
-            alt={i < rate ? "Étoile pleine" : "Étoile vide"} 
+            alt={i < rate ? "Étoile pleine" : "Étoile vide"}
+            className="container-stars__stars" 
         />
         );
     }
 
-    return <div>{stars}</div>
+    return <div className="container-stars">{stars}</div>
 }
 
 export default Rating

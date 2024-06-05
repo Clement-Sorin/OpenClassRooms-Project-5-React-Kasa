@@ -11,6 +11,11 @@ $font-primary: Montserrat, sans-serif;
         @content;
     }
 }
+@mixin mobile-750 {
+    @media (max-width: 750px) {
+        @content;
+    }
+}
 @mixin flex-column{
     display:flex;
     flex-direction: column;
