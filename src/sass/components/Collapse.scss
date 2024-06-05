@@ -20,9 +20,6 @@
         }
     }
     @include mobile {
-        &__title {
-            font-size: 13px;
-        }
         &__arrow {
             width: 16px;
         }
@@ -72,10 +69,30 @@
         z-index: -1;
         margin-bottom: 30px
     };
-    &__text {
-        font-size: 18px;
-         @include mobile {
-            font-size: 13px;
-         }
+}
+
+.classAboutTitle {
+    font-size: 24px;
+    @include mobile {
+        font-size: 13px;
+    }
+}
+.classAboutContent {
+    font-size: 18px;
+    @include mobile {
+        font-size: 13px;
+    }
+}
+
+.classHomeTitle {
+    font-size: 18px;
+    @include mobile {
+        font-size: 13px;
+    }
+}
+.classHomeContent {
+    font-size: 16px;
+    @include mobile {
+        font-size: 13px
     }
 }

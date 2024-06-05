@@ -1,2 +1,58 @@
 @import "../base/variables";
 
+.part-1 {
+    margin: 30px 0;
+    @include flex-between;
+    &__left {
+        @include flex-column;
+        gap: 10px;
+    }
+    &__right {
+        display: flex;
+    }
+}
+
+.main-title {
+    &__title {
+        font-size: 36px;
+        color: $fourth-color;
+        margin-bottom: 10px;
+    }
+    &__location {
+        font-size: 18px;
+    }
+}
+
+.tags {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    &__element {
+        padding: 8px 30px;
+        color: $third-color;
+        background-color: $fourth-color;
+        @include radius-25;
+    }
+}
+
+.host {
+    display: flex;
+    align-items: center;
+    &__name {
+        margin-right: 10px;
+        font-size: 18px;
+        color: $fourth-color;
+    }
+    &__picture {
+        width: 64px;
+        border-radius: 50px;
+    }
+}
+
+.part-2 {
+    @include flex-between;
+    &__collapse {
+        width: 48%;
+    }
+}

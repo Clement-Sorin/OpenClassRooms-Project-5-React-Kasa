@@ -2,9 +2,8 @@
 
 .header {
     margin: 50px;
-    display: flex;
+    @include flex-between;
     align-items: center;
-    justify-content: space-between;
     &__logo{
         width: 210px;
     }

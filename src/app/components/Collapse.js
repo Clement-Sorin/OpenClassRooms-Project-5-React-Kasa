@@ -2,7 +2,7 @@ import { useState } from "react"
 import "../../sass/components/Collapse.scss"
 import arrow from "../../assets/arrow_back_ios-24px 2.png"
 
-function Collapse({title, content}) {
+function Collapse({title, content, classTitle, classContent}) {
     const [isDropdownOpen, setDropdownOpen] = useState(false)
     function toggleDropdown() {
         setDropdownOpen(!isDropdownOpen)
@@ -17,7 +17,7 @@ function Collapse({title, content}) {
 
     return <div>
         <div className="collapse-bar" onClick={toggleDropdown}>
-            <h2 className="collapse-bar__title">{title}</h2>
+            <h2 className={`collapse-bar__title ${classTitle}`}>{title}</h2>
             <img 
                 className= {collapseArrowClass}
                 src={arrow} 
@@ -25,7 +25,7 @@ function Collapse({title, content}) {
             />
         </div>
         <div className={collapseContentClass}>
-            <p className="collapse-content__text">{content}</p>
+            <p className={`collapse-content__text ${classContent}`}>{content}</p>
         </div>
     </div>
 }
