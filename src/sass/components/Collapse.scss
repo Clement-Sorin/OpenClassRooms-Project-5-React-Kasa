@@ -14,12 +14,14 @@
 @keyframes opacityClose {
     0% {
         opacity: 1;
+        height: auto;
     }
     40% {
         opacity: 0;
     }
     100% {
         opacity: 0;
+        height: 0;
     }
 }
 
@@ -53,7 +55,6 @@
     background-color: $fifth-color;
     padding: 0 20px;
     transform: translateY(-90px);
-    height: 30px;
     transition: transform 400ms, height 400ms;
     animation: opacityClose 400ms forwards;
     overflow: hidden;
@@ -67,7 +68,6 @@
         animation: opacityOpen 400ms;
         position: relative;
         z-index: -1;
-        margin-bottom: 30px
     };
 }
 

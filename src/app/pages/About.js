@@ -11,7 +11,9 @@ function About() {
         <Banner key="banner-about" background_img={background_img} alt= {alt}/>
         <div className="container-collapse">
             {about.map(({title, content}) =>
-                <Collapse key={`about-${title}`} title={title} content={content} classTitle="classAboutTitle" classContent="classAboutContent" />
+                <div className="collapse">
+                    <Collapse key={`about-${title}`} title={title} content={content} classTitle="classAboutTitle" classContent="classAboutContent" />
+                </div>
             )}
         </div>
     </section>

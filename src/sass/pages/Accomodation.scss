@@ -99,6 +99,7 @@
 
 .part-2 {
     @include flex-between;
+    margin-bottom: 70px;
     &__collapse {
         width: 48%;
     }

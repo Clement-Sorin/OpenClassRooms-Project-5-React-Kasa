@@ -15,7 +15,7 @@ function Collapse({title, content, classTitle, classContent}) {
         collapseArrowClass += " collapse-bar__arrow--open"
     }
 
-    return <div>
+    return <>
         <div className="collapse-bar" onClick={toggleDropdown}>
             <h2 className={`collapse-bar__title ${classTitle}`}>{title}</h2>
             <img 
@@ -27,7 +27,7 @@ function Collapse({title, content, classTitle, classContent}) {
         <div className={collapseContentClass}>
             <div className={`collapse-content__text ${classContent}`}>{content}</div>
         </div>
-    </div>
+    </>
 }
 
 export default Collapse

@@ -6,6 +6,7 @@
 
 .container-collapse {
     @include flex-column;
+    gap: 30px;
     margin: 40px 100px;
     @media (max-width: 900px) {
         margin: 40px 0;
