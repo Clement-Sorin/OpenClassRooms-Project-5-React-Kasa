@@ -13,7 +13,7 @@ function Accomodations({accomodations}) {
 
     return <div className="wrap-main">
         <Slideshow 
-            key={`Slideshow for ${accomodation.id}`}
+            key={accomodation.id}
             pictures={accomodation.pictures} 
             title={accomodation.title}
         />
@@ -26,7 +26,10 @@ function Accomodations({accomodations}) {
                     </div>
                     <ul className="tags">
                         {tags.map(tag =>
-                            <li className="tags__element">{tag}</li>
+                            <li 
+                                key={tag}
+                                className="tags__element"
+                            >{tag}</li>
                         )}
                     </ul>
                 </div>
@@ -34,13 +37,13 @@ function Accomodations({accomodations}) {
                     <div className="host">
                         <ul className="host__name">
                             {slicedName.map(name =>
-                                <li>{name}</li>
+                                <li key={name}>{name}</li>
                             )}
                         </ul>
                         <img className="host__picture" src={accomodation.host.picture} alt={`profile of ${accomodation.host}`} />
                     </div>
                     <Rating 
-                        key={`rating for ${accomodation.id}`}
+                        key={accomodation.id}
                         rate={accomodation.rating} 
                     />
                 </div>

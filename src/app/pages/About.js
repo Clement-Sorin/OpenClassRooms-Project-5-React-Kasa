@@ -7,11 +7,11 @@ function About() {
     const alt = "paysage de montagne avec un lac"
 
     return <section className="wrap-main">
-        <Banner key="banner-about" background_img={background_img} alt= {alt}/>
+        <Banner key={"banner-about"} background_img={background_img} alt= {alt}/>
         <div className="container-collapse">
             {about.map(({title, content}) =>
                 <div className="collapse">
-                    <Collapse key={`about-${title}`} title={title} content={content} classTitle="classAboutTitle" classContent="classAboutContent" />
+                    <Collapse key={title} title={title} content={content} classTitle="classAboutTitle" classContent="classAboutContent" />
                 </div>
             )}
         </div>
