@@ -2,14 +2,13 @@ import { useParams } from "react-router-dom"
 import Slideshow from "../components/Slideshow"
 import Collapse from "../components/Collapse"
 import Rating from "../components/Rating"
+import Tag from "../components/Tag"
+import Host from "../components/Host"
 
 function Accomodations({accomodations}) {
     const {id} = useParams()
     const accomodation = accomodations.find((accomodation) => accomodation.id === id)
-    const tags = accomodation.tags
     const equipments = accomodation.equipments
-    const fullName = accomodation.host.name
-    const slicedName = fullName.split(' ')
 
     return <div className="wrap-main">
         <Slideshow 
@@ -24,24 +23,10 @@ function Accomodations({accomodations}) {
                         <h1 className="main-title__title">{accomodation.title}</h1>
                         <h2 className="main-title__location">{accomodation.location}</h2>
                     </div>
-                    <ul className="tags">
-                        {tags.map(tag =>
-                            <li 
-                                key={tag}
-                                className="tags__element"
-                            >{tag}</li>
-                        )}
-                    </ul>
+                    <Tag tags={accomodation.tags}/>
                 </div>
                 <div className="part-1__right">
-                    <div className="host">
-                        <ul className="host__name">
-                            {slicedName.map(name =>
-                                <li key={name}>{name}</li>
-                            )}
-                        </ul>
-                        <img className="host__picture" src={accomodation.host.picture} alt={`profile of ${accomodation.host}`} />
-                    </div>
+                    <Host accomodation={accomodation} />
                     <Rating 
                         key={accomodation.id}
                         rate={accomodation.rating} 

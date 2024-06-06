@@ -1,0 +1,23 @@
+.host {
+    display: flex;
+    align-items: center;
+    &__name {
+        margin-right: 10px;
+        font-size: 18px;
+        color: $primary-color;
+        @include flex-column;
+        align-items: flex-end;
+    }
+    &__picture {
+        width: 64px;
+        border-radius: 50px;
+    }
+    @include mobile-750 {
+        &__name {
+            font-size: 12px;
+        }
+        &__picture {
+            width: 32px;
+        }
+    }
+}

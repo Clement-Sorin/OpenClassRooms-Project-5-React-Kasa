@@ -50,51 +50,6 @@
     }
 }
 
-.tags {
-    margin: 10px 0;
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    &__element {
-        padding: 8px 30px;
-        color: $third-color;
-        background-color: $primary-color;
-        @include radius-25;
-    }
-    @include mobile-750 {
-        &__element {
-            font-size: 10px;
-            padding: 5px 10px;
-            @include flex-center-center;
-            text-align: center;
-        }
-    }
-}
-
-.host {
-    display: flex;
-    align-items: center;
-    &__name {
-        margin-right: 10px;
-        font-size: 18px;
-        color: $primary-color;
-        @include flex-column;
-        align-items: flex-end;
-    }
-    &__picture {
-        width: 64px;
-        border-radius: 50px;
-    }
-    @include mobile-750 {
-        &__name {
-            font-size: 12px;
-        }
-        &__picture {
-            width: 32px;
-        }
-    }
-}
-
 .part-2 {
     @include flex-between;
     margin-bottom: 70px;
