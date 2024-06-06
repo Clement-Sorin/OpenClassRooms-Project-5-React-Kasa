@@ -6,15 +6,14 @@ import Accomodation from "./pages/Accomodation";
 import About from "./pages/About";
 import Error404 from "./pages/Error404";
 import Default from "./layout/Default";
-import accomodations from "../datas/accomodations.json"
 
-const AppRoutes = () => {
+function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<Default />}>
-          <Route path="/" element={<Home accomodations={accomodations} />} />
-          <Route path="/fiche-logement/:id" element={<Accomodation accomodations={accomodations} />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/fiche-logement/:id" element={<Accomodation />} />
           <Route path="/a-propos" element={<About />} />
           <Route path="*" element={<Error404 />}  />
         </Route>

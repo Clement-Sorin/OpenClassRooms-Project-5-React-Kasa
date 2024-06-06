@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom"
+import accomodations from "../../datas/accomodations.json"
 import Slideshow from "../components/Slideshow"
 import Collapse from "../components/Collapse"
 import Rating from "../components/Rating"
 import Tag from "../components/Tag"
 import Host from "../components/Host"
 
-function Accomodations({accomodations}) {
+function Accomodations() {
     const {id} = useParams()
     const accomodation = accomodations.find((accomodation) => accomodation.id === id)
     const equipments = accomodation.equipments
