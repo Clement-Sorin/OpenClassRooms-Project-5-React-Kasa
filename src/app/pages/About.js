@@ -9,9 +9,17 @@ function About() {
     return <section className="wrap-main">
         <Banner key={"banner-about"} background_img={background_img} alt= {alt}/>
         <div className="container-collapse">
-            {about.map(({title, content}) =>
-                <div className="collapse">
-                    <Collapse key={title} title={title} content={content} classTitle="classAboutTitle" classContent="classAboutContent" />
+            {about.map(({title, content}, index) =>
+                <div 
+                    key={index}
+                    className="collapse"
+                >
+                    <Collapse  
+                        title={title} 
+                        content={content} 
+                        classTitle="classAboutTitle" 
+                        classContent="classAboutContent" 
+                    />
                 </div>
             )}
         </div>
