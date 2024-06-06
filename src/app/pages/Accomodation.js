@@ -18,15 +18,15 @@ function Accomodations() {
             title={accomodation.title}
         />
         <section className="details">
-            <div className="part-1">
-                <div className="part-1__left">
+            <div className="main-info">
+                <div className="main-info__left">
                     <div className="main-title">
                         <h1 className="main-title__title">{accomodation.title}</h1>
                         <h2 className="main-title__location">{accomodation.location}</h2>
                     </div>
                     <Tag tags={accomodation.tags}/>
                 </div>
-                <div className="part-1__right">
+                <div className="main-info__right">
                     <Host accomodation={accomodation} />
                     <Rating 
                         key={accomodation.id}
@@ -34,8 +34,8 @@ function Accomodations() {
                     />
                 </div>
             </div>
-            <div className="part-2">
-                <div className="part-2__collapse">
+            <div className="secondary-info">
+                <div className="secondary-info__collapse">
                     <Collapse 
                         key={accomodation.description}
                         title="Description" 
@@ -44,7 +44,7 @@ function Accomodations() {
                         classContent="classHomeContent"
                     />
                 </div>
-                <div className="part-2__collapse">
+                <div className="secondary-info__collapse">
                     <Collapse 
                         key={accomodation.equipment}
                         title="Equipement" 

@@ -11,3 +11,26 @@
     }
 
 }
+
+
+// Specific font-size for About page
+.container-collapse {
+    .collapse {
+        .collapse-bar {
+            &__title {
+                font-size: 24px;
+                @include mobile {
+                    font-size: 13px;
+                }
+            }
+        }
+        .collapse-content {
+            &__text {
+                @include mobile {
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+}

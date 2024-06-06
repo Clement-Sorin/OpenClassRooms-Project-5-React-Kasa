@@ -1,7 +1,7 @@
 import { useState } from "react"
 import arrow from "../../assets/arrow_back_ios-24px 2.png"
 
-function Collapse({title, content, classTitle, classContent}) {
+function Collapse({title, content}) {
     const [isDropdownOpen, setDropdownOpen] = useState(false)
     function toggleDropdown() {
         setDropdownOpen(!isDropdownOpen)
@@ -16,7 +16,7 @@ function Collapse({title, content, classTitle, classContent}) {
 
     return <>
         <div className="collapse-bar" onClick={toggleDropdown}>
-            <h2 className={`collapse-bar__title ${classTitle}`}>{title}</h2>
+            <h2 className={`collapse-bar__title`}>{title}</h2>
             <img 
                 className= {collapseArrowClass}
                 src={arrow} 
@@ -24,7 +24,7 @@ function Collapse({title, content, classTitle, classContent}) {
             />
         </div>
         <div className={collapseContentClass}>
-            <div className={`collapse-content__text ${classContent}`}>{content}</div>
+            <div className={`collapse-content__text`}>{content}</div>
         </div>
     </>
 }

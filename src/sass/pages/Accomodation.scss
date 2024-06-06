@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.part-1 {
+.main-info {
     margin: 30px 0;
     @include flex-between;
     gap: 50px;
@@ -50,7 +50,7 @@
     }
 }
 
-.part-2 {
+.secondary-info {
     @include flex-between;
     margin-bottom: 70px;
     &__collapse {
@@ -58,8 +58,31 @@
     }
     @include mobile-750 {
         @include flex-column-center;
+        gap: 30px;
         &__collapse {
             width: 100%;
+        }
+    }
+}
+
+// Specific font size variation for Collapse adapted to this page
+.secondary-info {
+    &__collapse {
+        .collapse-bar {
+            &__title {
+                font-size: 18px;
+                @include mobile {
+                    font-size: 13px;
+                }
+            }
+        }
+        .collapse-content {
+            &__text {
+                font-size: 16px;
+                @include mobile {
+                    font-size: 13px
+                }
+            }
         }
     }
 }

@@ -17,8 +17,6 @@ function About() {
                     <Collapse  
                         title={title} 
                         content={content} 
-                        classTitle="classAboutTitle" 
-                        classContent="classAboutContent" 
                     />
                 </div>
             )}
