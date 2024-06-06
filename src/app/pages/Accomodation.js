@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom"
+import { useState, useEffect } from "react"
+import Error404 from "../pages/Error404"
 import accomodations from "../../datas/accomodations.json"
 import Slideshow from "../components/Slideshow"
 import Collapse from "../components/Collapse"
@@ -6,10 +8,36 @@ import Rating from "../components/Rating"
 import Tag from "../components/Tag"
 import Host from "../components/Host"
 
+
 function Accomodations() {
+    
+    const [accomodation, setAccmodation] = useState({
+        tags: [],
+        equipments: [],
+        pictures: [],
+        rating: "",
+        title: "",
+        host: {name: "", picture: ""},
+        location: "" 
+    })
     const {id} = useParams()
-    const accomodation = accomodations.find((accomodation) => accomodation.id === id)
+
+    useEffect(() => {
+        accomodations.map((unit) => {
+            if (unit.id === id) {
+                setAccmodation(unit)
+            }
+
+            return null
+        })
+    }, [id])
     const equipments = accomodation.equipments
+
+    if (!accomodation.id) {
+        return (
+            <Error404 />
+        )
+    }
 
     return <div className="wrap-main">
         <Slideshow 

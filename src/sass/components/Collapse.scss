@@ -68,15 +68,3 @@
         z-index: -1;
     };
 }
-
-// Different font-size according to the page
-
-.classAboutTitle {
-    
-}
-.classAboutContent {
-    font-size: 18px;
-    @include mobile {
-        font-size: 13px;
-    }
-}
