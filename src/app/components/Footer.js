@@ -1,4 +1,4 @@
-import logo from '../../assets/logo-white.webp'
+import logo from '../../assets/logo-white.png'
 
 function Footer() {
     return (

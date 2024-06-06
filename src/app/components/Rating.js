@@ -1,16 +1,15 @@
-import starActive from "../../assets/star-active 3.png"
-import starInactive from "../../assets/star-inactive 2.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faStar} from "@fortawesome/free-solid-svg-icons";
 
 function Rating({ rate }) {
     const stars = [];
   
     for (let i = 0; i < 5; i++) {
         stars.push(
-        <img 
+        <FontAwesomeIcon
             key={i}
-            src={i < rate ? starActive : starInactive} 
-            alt={i < rate ? "Étoile pleine" : "Étoile vide"}
-            className="container-stars__stars" 
+            icon={faStar}
+            className={i < rate ? "container-stars__stars--orange" : "container-stars__stars--grey" }
         />
         );
     }

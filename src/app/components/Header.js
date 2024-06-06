@@ -1,5 +1,5 @@
 import { NavLink, Link } from 'react-router-dom'
-import logo from '../../assets/logo-orange.webp'
+import logo from '../../assets/logo-orange.png'
 
 function Header() {
     return (
