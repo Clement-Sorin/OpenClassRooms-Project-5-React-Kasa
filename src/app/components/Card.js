@@ -1,5 +1,3 @@
-import "../../sass/components/Card.scss"
-
 function Thumb({title, pictures, id}) {
     return <>
             <a href={`/fiche-logement/${id}`} className="card" aria-label={`fiche du logement ${title}`}>

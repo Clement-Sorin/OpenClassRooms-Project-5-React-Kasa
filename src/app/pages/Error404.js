@@ -1,5 +1,3 @@
-import "../../sass/pages/Error404.scss"
-
 function Error404() {
     return <div className="main-wrap">
         <h1 className="main-wrap__title1">404</h1>

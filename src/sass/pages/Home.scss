@@ -1,9 +1,7 @@
-@import "../base/variables";
-
 .gallery {
     margin:50px 0;
     padding: 50px;
-    background-color:$fifth-color;
+    background-color:$fourth-color;
     @include radius-25;
     @include flex-center-center;
     gap: 50px;

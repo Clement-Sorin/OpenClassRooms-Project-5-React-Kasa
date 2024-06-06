@@ -1,5 +1,3 @@
-import "../../sass/components/Banner.scss"
-
 function Banner({background_img, title, alt}) {
     return <section className="banner">
         <img 

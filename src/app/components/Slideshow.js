@@ -1,4 +1,3 @@
-import "../../sass/components/Slideshow.scss"
 import arrowBack from "../../assets/arrow_back_ios-24px 1.png"
 import arrowForward from "../../assets/arrow_forward_ios-24px 1.png"
 import { useState } from "react"

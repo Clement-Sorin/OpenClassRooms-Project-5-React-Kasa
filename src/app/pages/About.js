@@ -2,7 +2,6 @@ import Banner from "../components/Banner"
 import Collapse from "../components/Collapse"
 import background_img from "../../assets/lake_mountain.webp"
 import about from "../../datas/about-content.json"
-import "../../sass/pages/About.scss"
 
 function About() {
     const alt = "paysage de montagne avec un lac"

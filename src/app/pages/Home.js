@@ -1,7 +1,6 @@
 import background_img from '../../assets/coast-background.webp'
 import Banner from "../components/Banner";
 import Card from '../components/Card';
-import '../../sass/pages/Home.scss'
 
 function Home({accomodations}) {
   const title = "Chez vous, partout et ailleurs"

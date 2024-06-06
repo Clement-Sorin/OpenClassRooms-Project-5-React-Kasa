@@ -1,17 +1,15 @@
-@import "../base/variables";
-
 .main-wrap {
     @include flex-column-center;
     gap: 50px;
     margin: 50px 50px 70px 50px;
     text-align: center;
     &__title1 {
-        color: $fourth-color;
+        color: $primary-color;
         font-size: 288px;
         font-weight: 700;
     }
     &__title2 {
-        color: $fourth-color;
+        color: $primary-color;
     }
     &__link {
         font-size: 18px;

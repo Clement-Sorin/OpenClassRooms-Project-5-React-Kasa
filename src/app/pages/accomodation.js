@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom"
 import Slideshow from "../components/Slideshow"
-import "../../sass/pages/Accomodation.scss"
 import Collapse from "../components/Collapse"
 import Rating from "../components/Rating"
 

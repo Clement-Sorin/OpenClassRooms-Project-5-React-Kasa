@@ -1,5 +1,4 @@
 import { useState } from "react"
-import "../../sass/components/Collapse.scss"
 import arrow from "../../assets/arrow_back_ios-24px 2.png"
 
 function Collapse({title, content, classTitle, classContent}) {

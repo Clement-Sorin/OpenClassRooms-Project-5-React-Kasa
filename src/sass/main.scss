@@ -1,4 +1,21 @@
-@import "base/_variables";
-@import "base/_base";
-@import "components/Header.scss";
-@import "components/Footer.scss";
+// Base & variables
+@import "./base/variables";
+@import "./base/base";
+
+// Layout
+@import "./layout/Default.scss";
+
+// Components
+@import "./components/Header.scss";
+@import "./components/Footer.scss";
+@import "./components/Banner.scss";
+@import "./components/Card.scss";
+@import "./components/Collapse.scss";
+@import "./components/Slideshow.scss";
+@import "./components/Rating.scss";
+
+// Pages
+@import "./pages/Home.scss";
+@import "./pages/About.scss";
+@import "./pages/Accomodation.scss";
+@import "./pages/Error404.scss";

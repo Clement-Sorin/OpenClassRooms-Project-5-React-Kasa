@@ -1,4 +1,3 @@
-import "../../sass/components/Rating.scss"
 import starActive from "../../assets/star-active 3.png"
 import starInactive from "../../assets/star-inactive 2.png"
 
