@@ -28,7 +28,21 @@ function Slideshow({pictures, title}) {
             </div>
             </>
         ) : null}
-        <img className="slideshow__picture" src={pictures[currentIndex]} alt={`aperçu de ${title} numéro ${currentIndex +1}`} />
+        <div className="carroussel">
+            <div
+            className="carroussel__track"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+                {pictures.map((picture , index) =>
+                    <img 
+                        key={index}
+                        src={picture}
+                        className={`carroussel__track--picture`} 
+                        alt={`aperçu de ${title} numéro ${index +1}`} 
+                    />
+                )}
+            </div>
+        </div>
     </div>
 }
 
