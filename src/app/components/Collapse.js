@@ -10,7 +10,7 @@ function Collapse({title, content}) {
     let collapseContentClass = "collapse-content"
     let collapseArrowClass = "collapse-bar__arrow"
     if (isDropdownOpen) {
-        collapseContentClass = " collapse-content--open"
+        collapseContentClass += " is-open"
         collapseArrowClass += " collapse-bar__arrow--open"
     }
 
@@ -24,7 +24,7 @@ function Collapse({title, content}) {
             />
         </div>
         <div className={collapseContentClass}>
-            <div className={`collapse-content__text`}>{content}</div>
+            <p className={`collapse-content__text`}>{content}</p>
         </div>
     </>
 }

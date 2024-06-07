@@ -74,12 +74,12 @@ function Accomodations() {
                 </div>
                 <div className="secondary-info__collapse">
                     <Collapse 
-                        key={accomodation.equipment}
+                        key={accomodation.equipments}
                         title="Equipement" 
-                        content={equipments.map(equipment =>
-                            <ul key={equipment}>
-                                <li>{equipment}</li>
-                            </ul>
+                        content={equipments.map((equipment, index) =>
+                            <>
+                                <span key={index} >{equipment}</span><br/>
+                            </>
                         )}
                         classTitle="classHomeTitle"
                         classContent="classHomeContent" 

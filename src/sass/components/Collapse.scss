@@ -52,19 +52,13 @@
 .collapse-content {
     background-color: $fourth-color;
     padding: 0 20px;
-    transform: translateY(-90px);
-    transition: transform 400ms, height 400ms;
-    animation: opacityClose 400ms forwards;
+    max-height: 0;
     overflow: hidden;
-    position: relative;
-    z-index: -1;
-    &--open{
-        background-color: $fourth-color;
-        padding: 20px;
-        transform: translateY(0px);
-        transition: transform 400ms;
-        animation: opacityOpen 400ms;
-        position: relative;
-        z-index: -1;
-    };
+    transition: max-height 500ms;
 }
+
+.is-open{
+    background-color: $fourth-color;
+    max-height: 100%;
+    
+};
