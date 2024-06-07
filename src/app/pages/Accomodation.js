@@ -81,8 +81,6 @@ function Accomodations() {
                                 <span key={index} >{equipment}</span><br/>
                             </>
                         )}
-                        classTitle="classHomeTitle"
-                        classContent="classHomeContent" 
                     />
                 </div>
             </div>
