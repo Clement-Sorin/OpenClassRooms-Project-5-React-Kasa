@@ -1,5 +1,5 @@
-import arrowBack from "../../assets/arrow_back_ios-24px 1.png"
-import arrowForward from "../../assets/arrow_forward_ios-24px 1.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react"
 
 function Slideshow({pictures, title}) {
@@ -20,8 +20,8 @@ function Slideshow({pictures, title}) {
         {length > 1 ? (
             <>
             <div className="arrow" >
-                <img src={arrowBack} className="arrow__back" onClick={handlePreviewClick} alt="flèche précédente" />
-                <img src={arrowForward} className="arrow__forward" onClick={handleForwardClick} alt="flèche suivante" />
+                <FontAwesomeIcon icon={faChevronLeft} className="arrow__back" onClick={handlePreviewClick} />
+                <FontAwesomeIcon icon={faChevronRight}  className="arrow__forward" onClick={handleForwardClick} />
             </div>
             <div className="picture-count" >
                 <span className="picture-count__text" >{currentIndex +1 }/{length}</span>
