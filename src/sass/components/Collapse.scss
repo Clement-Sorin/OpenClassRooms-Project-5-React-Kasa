@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     @include radius-10;
-    padding: 10px 20px;
+    padding: 5px 20px;
     cursor: pointer;
     &__title {
         color: $third-color;

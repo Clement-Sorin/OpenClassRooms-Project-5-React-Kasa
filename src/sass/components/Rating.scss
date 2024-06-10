@@ -13,15 +13,16 @@
             color: #E3E3E3;
         }
         &--orange, &--grey {
-            font-size: 32px;
+            font-size: 22px;
             line-height: 1;
         }
     }
     @include mobile-750 {
         justify-content: flex-start;
+    
         &__stars {
             &--orange, &--grey {
-                font-size: 18px;  
+                font-size: 16px;  
             }
         }
     }

@@ -5,11 +5,11 @@
     @include flex-between;
     align-items: center;
     &__logo{
-        width: 210px;
+        width: 180px;
     }
     @media (max-width:550px) {
         &__logo{
-            width: 145px;
+            width: 120px;
         }
     };
     @include mobile{
@@ -21,7 +21,7 @@
     display: flex;
     gap: 57px;
     &__link{
-        font-size: 24px;
+        font-size: 18px;
     };
     @include mobile {
         gap: 26px;
