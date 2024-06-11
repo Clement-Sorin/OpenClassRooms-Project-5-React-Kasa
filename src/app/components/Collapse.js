@@ -24,7 +24,7 @@ function Collapse({title, content}) {
             />
         </div>
         <div className={collapseContentClass}>
-            <p className={`collapse-content__text`}>{content}</p>
+            <div className={`collapse-content__text`}>{content}</div>
         </div>
     </>
 }

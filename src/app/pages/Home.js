@@ -6,7 +6,6 @@ import Card from '../components/Card';
 function Home() {
   const title = "Chez vous, partout et ailleurs"
   const alt = "fond pour le titre de la page représentant une côte maritime"
-  console.log(accomodations)
 
   return (
     <div className="wrap-main">

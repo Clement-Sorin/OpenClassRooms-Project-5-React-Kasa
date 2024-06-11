@@ -59,7 +59,8 @@
         width: 48%;
     }
     @include mobile-750 {
-        @include flex-column-center;
+        @include flex-center;
+        flex-wrap: wrap;
         gap: 30px;
         margin-bottom: 40px;
         &__collapse {

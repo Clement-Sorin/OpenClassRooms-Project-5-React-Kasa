@@ -68,8 +68,6 @@ function Accomodations() {
                         key={accomodation.description}
                         title="Description" 
                         content={accomodation.description}
-                        classTitle="classHomeTitle" 
-                        classContent="classHomeContent"
                     />
                 </div>
                 <div className="secondary-info__collapse">
@@ -77,9 +75,9 @@ function Accomodations() {
                         key={accomodation.equipments}
                         title="Equipement" 
                         content={equipments.map((equipment, index) =>
-                            <>
-                                <span key={index} >{equipment}</span><br/>
-                            </>
+                            <div key={index}>
+                                <span>{equipment}</span>
+                            </div>
                         )}
                     />
                 </div>
