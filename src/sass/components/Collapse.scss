@@ -8,7 +8,7 @@
     cursor: pointer;
     &__title {
         color: $third-color;
-    };
+    }
     &__arrow {
         transform: rotate(0deg);
         transition: transform 400ms;
@@ -29,12 +29,12 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 500ms;
-    &__text{
+    &__text {
         margin: 16px 20px;
     }
 }
 
-.is-open{
+.is-open {
     background-color: $fourth-color;
     max-height: 100%;
-};
+}

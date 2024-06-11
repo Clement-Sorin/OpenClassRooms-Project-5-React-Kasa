@@ -10,19 +10,21 @@
             color: $primary-color;
         }
         &--grey {
-            color: #E3E3E3;
+            color: #e3e3e3;
         }
-        &--orange, &--grey {
+        &--orange,
+        &--grey {
             font-size: 22px;
             line-height: 1;
         }
     }
     @include mobile-750 {
         justify-content: flex-start;
-    
+
         &__stars {
-            &--orange, &--grey {
-                font-size: 16px;  
+            &--orange,
+            &--grey {
+                font-size: 16px;
             }
         }
     }

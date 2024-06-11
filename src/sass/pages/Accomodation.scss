@@ -44,7 +44,6 @@
     @include mobile-750 {
         &__title {
             font-size: 18px;
-            
         }
         &__location {
             font-size: 14px;
@@ -84,7 +83,7 @@
             &__text {
                 font-size: 16px;
                 @include mobile {
-                    font-size: 13px
+                    font-size: 13px;
                 }
             }
         }

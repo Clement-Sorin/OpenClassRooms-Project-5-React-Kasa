@@ -4,30 +4,31 @@
     margin: 50px;
     @include flex-between;
     align-items: center;
-    &__logo{
+    &__logo {
         width: 180px;
     }
-    @media (max-width:550px) {
-        &__logo{
+    @media (max-width: 550px) {
+        &__logo {
             width: 120px;
         }
-    };
-    @include mobile{
-        margin:20px;
+    }
+    @include mobile {
+        margin: 20px;
     }
 }
 
-.navbar{
+.navbar {
     display: flex;
     gap: 57px;
-    &__link{
+    &__link {
+        color: $secondary-color;
         font-size: 18px;
-    };
+    }
     @include mobile {
         gap: 26px;
         flex-wrap: wrap;
         margin-left: 20px;
-        &__link{
+        &__link {
             font-size: 12px;
         }
     }

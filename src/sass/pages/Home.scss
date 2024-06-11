@@ -1,8 +1,8 @@
 .gallery {
     width: 80%;
-    margin:50px 0;
+    margin: 50px 0;
     padding: 50px;
-    background-color:$fourth-color;
+    background-color: $fourth-color;
     @include radius-25;
     @include flex-center-center;
     gap: 50px;
