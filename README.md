@@ -22,21 +22,23 @@ Fifth project of the OpenClassrooms Web Developer course
 
 <details>
     <summary>kasa_main</summary>
-    <ul>
+    <ul style="list-style-type: none">
         <li><details>
             <summary>public</summary>
-            - index.html</br>
-            - robots.txt
+            <ul style="list-style-type: none">
+                <li>index.html</li>
+                <li>robots.txt</li>
+            </ul>
         </details></li>
         <li><details>
             <summary>src</summary>
-            <ul>
+            <ul style="list-style-type: none">
                 <li><details>
                     <summary>app</summary>
-                    <ul>
+                    <ul style="list-style-type: none">
                         <li><details>
                             <summary>components</summary>
-                            <ul>
+                            <ul style="list-style-type: none">
                                 <li>Banner.jsx</li>
                                 <li>Card.jsx</li>
                                 <li>Collapse.jsx</li>
@@ -50,13 +52,13 @@ Fifth project of the OpenClassrooms Web Developer course
                         </details></li>
                         <li><details>
                             <summary>layout</summary>
-                            <ul>
+                            <ul style="list-style-type: none">
                                 <li>Default.jsx</li>
                             </ul>
                         </details></li>
                         <li><details>
                             <summary>pages</summary>
-                            <ul>
+                            <ul style="list-style-type: none">
                                 <li>About.jsx</li>
                                 <li>Accomodation.jsx</li>
                                 <li>Error404.jsx</li>
@@ -68,7 +70,7 @@ Fifth project of the OpenClassrooms Web Developer course
                 </details></li>
                 <li><details>
                     <summary>assets</summary>
-                    <ul>
+                    <ul style="list-style-type: none">
                         <li>arrow_back_ios-24px 2.png</li>
                         <li>coast-background.webp</li>
                         <li>lake_mountain.webp</li>
@@ -78,31 +80,31 @@ Fifth project of the OpenClassrooms Web Developer course
                 </details></li>
                 <li><details>
                     <summary>css</summary>
-                    <ul>
+                    <ul style="list-style-type: none">
                         <li>style.css</li>
                         <li>style.css.map</li>
                     </ul>
                 </details></li>
                 <li><details>
                     <summary>datas</summary>
-                    <ul>
+                    <ul style="list-style-type: none">
                         <li>about-content.json</li>
                         <li>accomodation.json</li>
                     </ul>
                 </details></li>
                 <li><details>
                     <summary>sass</summary>
-                    <ul>
+                    <ul style="list-style-type: none">
                         <li><details>
                             <summary>base</summary>
-                            <ul>
+                            <ul style="list-style-type: none">
                                 - _base.scss</br>
                                 - _variables.scss
                             </ul>
                         </details></li>
                         <li><details>
                             <summary>components</summary>
-                            <ul>
+                            <ul style="list-style-type: none">
                                 <li>Banner.scss</li>
                                 <li>Card.scss</li>
                                 <li>Collapse.scss</li>
@@ -116,13 +118,13 @@ Fifth project of the OpenClassrooms Web Developer course
                         </details></li>
                         <li><details>
                             <summary>layout</summary>
-                            <ul>
+                            <ul style="list-style-type: none">
                                 <li>Default.scss</li>
                             </ul>
                         </details></li>
                         <li><details>
                             <summary>pages</summary>
-                            <ul>
+                            <ul style="list-style-type: none">
                                 <li>About.scss</li>
                                 <li>Accomodation.scss</li>
                                 <li>Error404.scss</li>
@@ -135,8 +137,8 @@ Fifth project of the OpenClassrooms Web Developer course
                 <li>index.jsx : main root file</li>
             </ul>
         </details></li>
-        <li>package.json</br></li>
-        <li>package-lock.json</br></li>
+        <li>package.json</li>
+        <li>package-lock.json</li>
         <li>gitignore</li>
     </ul>
 </details>
