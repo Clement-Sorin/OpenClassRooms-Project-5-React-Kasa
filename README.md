@@ -2,7 +2,7 @@
 
 # Kasa - Real estate renting app
 
-<img src="./src/assets/kasa_screenshot.png" alt="kasa homepage screenshot" width="500" />
+<img src="./src/assets/kasa_screenshot.png" alt="kasa homepage screenshot" width="800" />
 
 ## Description
 
@@ -21,11 +21,11 @@ Fifth project of the OpenClassrooms Web Developer course
 ## Code Architecture
 
 <details>
-    <summary>Kasa</summary>
+    <summary>kasa_main</summary>
     <details>
         <summary>public</summary>
-        - **index.html**
-        - **robots.txt**
+        - index.html</br>
+        - robots.txt
     </details>
     <details>
         <summary>src</summary>
@@ -33,84 +33,84 @@ Fifth project of the OpenClassrooms Web Developer course
             <summary>app</summary>
             <details>
                 <summary>components</summary>
-                - **Banner.jsx**
-                - **Card.jsx**
-                - **Collapse.jsx**
-                - **Footer.jsx**
-                - **Header.jsx**
-                - **Host.jsx**
-                - **Rating.jsx**
-                - **Slideshow.jsx**
-                - **Tag.jsx**
+                - Banner.jsx</br>
+                - Card.jsx</br>
+                - Collapse.jsx</br>
+                - Footer.jsx</br>
+                - Header.jsx</br>
+                - Host.jsx</br>
+                - Rating.jsx</br>
+                - Slideshow.jsx</br>
+                - Tag.jsx
             </details>
             <details>
                 <summary>layout</summary>
-                - **Default.jsx**
+                - Default.jsx
             </details>
             <details>
                 <summary>pages</summary>
-                - **About.jsx**
-                - **Accomodation.jsx**
-                - **Error404.jsx**
-                - **Home.jsx**
+                - About.jsx</br>
+                - Accomodation.jsx</br>
+                - Error404.jsx</br>
+                - Home.jsx
             </details>
-            - **Routes.jsx** : page router
+            - Routes.jsx : page router
         </details>
         <details>
             <summary>assets</summary>
-            - **arrow_back_ios-24px 2.png**
-            - **coast-background.webp**
-            - **lake_mountain.webp**
-            - **logo-orange.png**
-            - **logo-white.png**
+            - arrow_back_ios-24px 2.png</br>
+            - coast-background.webp</br>
+            - lake_mountain.webp</br>
+            - logo-orange.png</br>
+            - logo-white.png
         </details>
         <details>
             <summary>css</summary>
-            - **style.css**
-            - **style.css.map**
+            - style.css</br>
+            - style.css.map
         </details>
         <details>
             <summary>datas</summary>
-            - **about-content.json**
-            - **accomodation.json**
+            - about-content.json</br>
+            - accomodation.json
         </details>
         <details>
             <summary>sass</summary>
             <details>
                 <summary>base</summary>
-                - **_base.scss**
-                - **_variables.scss**
+                - _base.scss</br>
+                - _variables.scss
             </details>
             <details>
                 <summary>components</summary>
-                - **Banner.scss**
-                - **Card.scss**
-                - **Collapse.scss**
-                - **Footer.scss**
-                - **Header.scss**
-                - **Host.scss**
-                - **Rating.scss**
-                - **Slideshow.scss**
-                - **Tag.scss**
+                - Banner.scss</br>
+                - Card.scss</br>
+                - Collapse.scss</br>
+                - Footer.scss</br>
+                - Header.scss</br>
+                - Host.scss</br>
+                - Rating.scss</br>
+                - Slideshow.scss</br>
+                - Tag.scss
             </details>
             <details>
                 <summary>layout</summary>
-                - **Default.scss**
+                - Default.scss
             </details>
             <details>
                 <summary>pages</summary>
-                - **About.scss**
-                - **Accomodation.scss**
-                - **Error404.scss**
-                - **Home.scss**
+                - About.scss</br>
+                - Accomodation.scss</br>
+                - Error404.scss</br>
+                - Home.scss
             </details>
-            - **main.scss**
+            - main.scss
         </details>
-        - **index.jsx** : main root file
+        - index.jsx : main root file
     </details>
-    - **package.json**
-    - **package-lock.json**
-    - **gitignore**
+    - package.json</br>
+    - package-lock.json</br>
+    - gitignore
 </details>
 
 ## Goal
