@@ -11,7 +11,7 @@ function Thumb({ title, pictures, id }) {
                     src={pictures[0]}
                     alt={`aperçu de ${title}`}
                 />
-                <h3 className="card__title">{title}</h3>
+                <h2 className="card__title">{title}</h2>
             </a>
         </>
     )
