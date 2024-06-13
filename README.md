@@ -25,8 +25,8 @@ Fifth project of the OpenClassrooms Web Developer course
     <details>
         <summary>📂 public</summary>
         - index.html</br>
-        - robots.txt
-            - test.txt
+        - robots.txt</br>
+            - test.txt</br>
             - test_2.text
     </details>
     <details>
