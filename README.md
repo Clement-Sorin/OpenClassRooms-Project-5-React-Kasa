@@ -21,126 +21,96 @@ Fifth project of the OpenClassrooms Web Developer course
 ## Code Architecture
 
 <details>
-    <summary>kasa_main</summary>
-    <ul style="list-style-type: none">
-        <li><details>
-            <summary>public</summary>
-            <ul style="list-style-type: none">
-                <li>index.html</li>
-                <li>robots.txt</li>
-            </ul>
-        </details></li>
-        <li><details>
-            <summary>src</summary>
-            <ul style="list-style-type: none">
-                <li><details>
-                    <summary>app</summary>
-                    <ul style="list-style-type: none">
-                        <li><details>
-                            <summary>components</summary>
-                            <ul style="list-style-type: none">
-                                <li>Banner.jsx</li>
-                                <li>Card.jsx</li>
-                                <li>Collapse.jsx</li>
-                                <li>Footer.jsx</li>
-                                <li>Header.jsx</li>
-                                <li>Host.jsx</li>
-                                <li>Rating.jsx</li>
-                                <li>Slideshow.jsx</li>
-                                <li>Tag.jsx</li>
-                            </ul>
-                        </details></li>
-                        <li><details>
-                            <summary>layout</summary>
-                            <ul style="list-style-type: none">
-                                <li>Default.jsx</li>
-                            </ul>
-                        </details></li>
-                        <li><details>
-                            <summary>pages</summary>
-                            <ul style="list-style-type: none">
-                                <li>About.jsx</li>
-                                <li>Accomodation.jsx</li>
-                                <li>Error404.jsx</li>
-                                <li>Home.jsx</li>
-                            </ul>
-                        </details></li>
-                        <li>- Routes.jsx : page router</li>
-                    </ul>
-                </details></li>
-                <li><details>
-                    <summary>assets</summary>
-                    <ul style="list-style-type: none">
-                        <li>arrow_back_ios-24px 2.png</li>
-                        <li>coast-background.webp</li>
-                        <li>lake_mountain.webp</li>
-                        <li>logo-orange.png</li>
-                        <li>logo-white.png</li>
-                    </ul>
-                </details></li>
-                <li><details>
-                    <summary>css</summary>
-                    <ul style="list-style-type: none">
-                        <li>style.css</li>
-                        <li>style.css.map</li>
-                    </ul>
-                </details></li>
-                <li><details>
-                    <summary>datas</summary>
-                    <ul style="list-style-type: none">
-                        <li>about-content.json</li>
-                        <li>accomodation.json</li>
-                    </ul>
-                </details></li>
-                <li><details>
-                    <summary>sass</summary>
-                    <ul style="list-style-type: none">
-                        <li><details>
-                            <summary>base</summary>
-                            <ul style="list-style-type: none">
-                                - _base.scss</br>
-                                - _variables.scss
-                            </ul>
-                        </details></li>
-                        <li><details>
-                            <summary>components</summary>
-                            <ul style="list-style-type: none">
-                                <li>Banner.scss</li>
-                                <li>Card.scss</li>
-                                <li>Collapse.scss</li>
-                                <li>Footer.scss</li>
-                                <li>Header.scss</li>
-                                <li>Host.scss</li>
-                                <li>Rating.scss</li>
-                                <li>Slideshow.scss</li>
-                                <li>Tag.scss</li>
-                            </ul>
-                        </details></li>
-                        <li><details>
-                            <summary>layout</summary>
-                            <ul style="list-style-type: none">
-                                <li>Default.scss</li>
-                            </ul>
-                        </details></li>
-                        <li><details>
-                            <summary>pages</summary>
-                            <ul style="list-style-type: none">
-                                <li>About.scss</li>
-                                <li>Accomodation.scss</li>
-                                <li>Error404.scss</li>
-                                <li>Home.scss</li>
-                            </ul>
-                        </details></li>
-                        <li>main.scss</li>
-                    </ul>
-                </details></li>
-                <li>index.jsx : main root file</li>
-            </ul>
-        </details></li>
-        <li>package.json</li>
-        <li>package-lock.json</li>
-        <li>gitignore</li>
-    </ul>
+    <summary>📂 kasa_main</summary>
+    <details>
+        <summary>public</summary>
+        - index.html</br>
+        - robots.txt
+    </details>
+    <details>
+        <summary>📂 src</summary>
+        <details>
+            <summary>📂 app</summary>
+            <details>
+                <summary>components</summary>
+                - Banner.jsx</br>
+                - Card.jsx</br>
+                - Collapse.jsx</br>
+                - Footer.jsx</br>
+                - Header.jsx</br>
+                - Host.jsx</br>
+                - Rating.jsx</br>
+                - Slideshow.jsx</br>
+                - Tag.jsx
+            </details>
+            <details>
+                <summary>📂 layout</summary>
+                - Default.jsx
+            </details>
+            <details>
+                <summary>📂 pages</summary>
+                - About.jsx</br>
+                - Accomodation.jsx</br>
+                - Error404.jsx</br>
+                - Home.jsx
+            </details>
+            - Routes.jsx : page router
+        </details>
+        <details>
+            <summary>📂 assets</summary>
+            - arrow_back_ios-24px 2.png</br>
+            - coast-background.webp</br>
+            - lake_mountain.webp</br>
+            - logo-orange.png</br>
+            - logo-white.png
+        </details>
+        <details>
+            <summary>📂 css</summary>
+            - style.css</br>
+            - style.css.map
+        </details>
+        <details>
+            <summary>📂 datas</summary>
+            - about-content.json</br>
+            - accomodation.json
+        </details>
+        <details>
+            <summary>📂 sass</summary>
+            <details>
+                <summary>📂 base</summary>
+                - _base.scss</br>
+                - _variables.scss
+            </details>
+            <details>
+                <summary>📂 components</summary>
+                - Banner.scss</br>
+                - Card.scss</br>
+                - Collapse.scss</br>
+                - Footer.scss</br>
+                - Header.scss</br>
+                - Host.scss</br>
+                - Rating.scss</br>
+                - Slideshow.scss</br>
+                - Tag.scss
+            </details>
+            <details>
+                <summary>📂 layout</summary>
+                - Default.scss
+            </details>
+            <details>
+                <summary>📂 pages</summary>
+                - About.scss</br>
+                - Accomodation.scss</br>
+                - Error404.scss</br>
+                - Home.scss
+            </details>
+            - main.scss
+        </details>
+        - index.jsx : main root file
+    </details>
+    - package.json</br>
+    - package-lock.json</br>
+    - gitignore
 </details>
 
 ## Goal
