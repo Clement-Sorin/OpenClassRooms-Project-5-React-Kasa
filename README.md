@@ -22,12 +22,14 @@ Fifth project of the OpenClassrooms Web Developer course
 
 <details>
     <summary>📂 kasa_main</summary>
-    - <details>
+    <details>
         <summary>📂 public</summary>
         - index.html</br>
         - robots.txt
+            - test.txt
+            - test_2.text
     </details>
-    - <details>
+    <details>
         <summary>📂 src</summary>
         <details>
             <summary>📂 app</summary>
