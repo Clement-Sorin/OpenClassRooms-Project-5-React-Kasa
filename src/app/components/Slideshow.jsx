@@ -48,12 +48,16 @@ function Slideshow({ pictures, title }) {
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
                     {pictures.map((picture, index) => (
-                        <img
+                        <div
+                            className="carroussel__track--container"
                             key={index}
-                            src={picture}
-                            className={`carroussel__track--picture`}
-                            alt={`aperçu de ${title} numéro ${index + 1}`}
-                        />
+                        >
+                            <img
+                                src={picture}
+                                className={`accomodation-picture`}
+                                alt={`aperçu de ${title} numéro ${index + 1}`}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
