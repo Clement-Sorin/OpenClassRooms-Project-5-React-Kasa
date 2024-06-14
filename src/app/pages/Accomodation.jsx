@@ -18,6 +18,7 @@ function Accomodations() {
         host: { name: "", picture: "" },
         location: "",
     })
+
     const { id } = useParams()
 
     useEffect(() => {
@@ -29,11 +30,12 @@ function Accomodations() {
             return null
         })
     }, [id])
-    const equipments = accomodation.equipments
 
     if (!accomodation.id) {
         return <Error404 />
     }
+
+    const equipments = accomodation.equipments
 
     return (
         <div className="wrap-main">

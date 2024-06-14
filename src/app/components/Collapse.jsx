@@ -2,14 +2,14 @@ import { useState } from "react"
 import arrow from "../../assets/arrow_back_ios-24px 2.png"
 
 function Collapse({ title, content }) {
-    const [isDropdownOpen, setDropdownOpen] = useState(false)
+    const [dropdownOpen, setDropdownOpen] = useState(false)
     function toggleDropdown() {
-        setDropdownOpen(!isDropdownOpen)
+        setDropdownOpen(!dropdownOpen)
     }
 
     let collapseContentClass = "collapse-content"
     let collapseArrowClass = "collapse-bar__arrow"
-    if (isDropdownOpen) {
+    if (dropdownOpen) {
         collapseContentClass += " is-open"
         collapseArrowClass += " collapse-bar__arrow--open"
     }
