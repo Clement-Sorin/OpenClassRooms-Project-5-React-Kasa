@@ -2,7 +2,5 @@
     "extends": [
         "react-app"
     ],
-    "rules": {
-        "ignorePatterns": ["README.md"]
-    }
+    "rules": {}
 }
