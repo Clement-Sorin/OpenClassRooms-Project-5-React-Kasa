@@ -1,5 +1,5 @@
 import React from "react"
-import AppRoutes from "./app/Routes"
+import AppRoutes from "./app/AppRoutes"
 import { createRoot } from "react-dom/client"
 import "./css/style.css"
 
