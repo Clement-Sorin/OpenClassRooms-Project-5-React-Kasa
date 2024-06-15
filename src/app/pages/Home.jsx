@@ -4,7 +4,17 @@ import Banner from "../components/Banner"
 import Card from "../components/Card"
 
 function Home() {
-    const title = "Chez vous, partout et ailleurs"
+    const cutTitlePt1 = "Chez vous,"
+    const cutTitlePt2 = " partout et ailleurs"
+    const titleMobile = (
+        <>
+            {cutTitlePt1}
+            <br />
+            {cutTitlePt2}
+        </>
+    )
+    const title = cutTitlePt1 + cutTitlePt2
+
     const alt = "fond pour le titre de la page représentant une côte maritime"
 
     return (
@@ -12,6 +22,7 @@ function Home() {
             <Banner
                 key="banner-home"
                 background_img={background_img}
+                titleMobile={titleMobile}
                 title={title}
                 alt={alt}
             />
