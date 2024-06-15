@@ -26,8 +26,6 @@ function Accomodations() {
             if (unit.id === id) {
                 setAccmodation(unit)
             }
-
-            return null
         })
     }, [id])
 
