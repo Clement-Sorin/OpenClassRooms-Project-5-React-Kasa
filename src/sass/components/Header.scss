@@ -23,6 +23,9 @@
     &__link {
         color: $secondary-color;
         font-size: 18px;
+        &.active {
+            border-bottom: 1.5px solid $secondary-color;
+        }
     }
     @include mobile {
         gap: 26px;
