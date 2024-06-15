@@ -12,7 +12,7 @@
     }
     &__right {
         @include flex-column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: flex-end;
         width: 35%;
     }
